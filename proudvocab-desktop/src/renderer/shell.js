@@ -59,7 +59,6 @@
   let desktopCfg = {
     panelWidth: 400,
     panelVisible: true,
-    licenseServer: false,   // do not phone home to the extension's license/telemetry server
     lastVideo: null,
     recent: [],
   };

@@ -216,7 +216,7 @@ async function run({ app, createMainWindow }) {
     await step('player: cue map published to the engine', async () => {
       const info = await js(`(() => {
         const w = window.__pvBus.shell.playerFrame();
-        const subs = w.__primevocab_subtitles || {};
+        const subs = w.__proudvocab_subtitles || {};
         const keys = Object.keys(subs);
         return { langs: keys, sizes: keys.map(k => subs[k] && subs[k].size) };
       })()`);
@@ -237,10 +237,10 @@ async function run({ app, createMainWindow }) {
           caption: api.__test.caption(),
           overlay: api.__test.overlayText().slice(0, 90),
           chips: api.__test.chips(),
-          overlayExists: !!w.document.getElementById('primevocab-subtitle-overlay'),
+          overlayExists: !!w.document.getElementById('proudvocab-subtitle-overlay'),
         };
       })()`);
-      if (!res.overlayExists) throw new Error('the engine never created #primevocab-subtitle-overlay');
+      if (!res.overlayExists) throw new Error('the engine never created #proudvocab-subtitle-overlay');
       if (!res.caption) throw new Error('caption host is empty – SRT ticker did not run');
       if (!res.chips) throw new Error('no word chips rendered. overlay="' + res.overlay + '"');
       return `${res.chips} chips · "${res.overlay}…"`;
@@ -281,7 +281,7 @@ async function run({ app, createMainWindow }) {
       const res = await js(`(async () => {
         const w = window.__pvBus.shell.playerFrame();
         const d = w.document;
-        const chip = d.querySelector('.primevocab-word-chip');
+        const chip = d.querySelector('.proudvocab-word-chip');
         if (!chip) throw new Error('no chip to click');
         const word = chip.textContent.trim();
         chip.dispatchEvent(new w.MouseEvent('mouseenter', { bubbles: true }));
@@ -289,7 +289,7 @@ async function run({ app, createMainWindow }) {
         chip.dispatchEvent(new w.MouseEvent('click', { bubbles: true }));
         let tip = null;
         for (let i = 0; i < 60; i++) {
-          tip = d.querySelector('#primevocab-translation-tooltip, .primevocab-translation-tooltip');
+          tip = d.querySelector('#proudvocab-translation-tooltip, .proudvocab-translation-tooltip');
           if (tip && tip.offsetParent !== null) break;
           await new Promise(r => setTimeout(r, 100));
         }
@@ -310,7 +310,7 @@ async function run({ app, createMainWindow }) {
            arrived, so wait for the tooltip to leave its "loading" state */
         let btn = null;
         for (let i = 0; i < 150; i++) {
-          btn = d.querySelector('#primevocab-tooltip-save-btn') || d.querySelector('.primevocab-tooltip-save');
+          btn = d.querySelector('#proudvocab-tooltip-save-btn') || d.querySelector('.proudvocab-tooltip-save');
           if (btn && btn.onclick) break;
           await new Promise(r => setTimeout(r, 100));
         }
@@ -378,7 +378,7 @@ async function run({ app, createMainWindow }) {
         api.__test.seekTo(25.2);
         let txt = '';
         for (let i = 0; i < 120; i++) {
-          const el = w.document.querySelector('.primevocab-subtitle-translation');
+          const el = w.document.querySelector('.proudvocab-subtitle-translation');
           txt = el ? (el.textContent || '').replace(/\\s+/g, ' ').trim() : '';
           if (txt) break;
           await new Promise(r => setTimeout(r, 100));
@@ -395,8 +395,8 @@ async function run({ app, createMainWindow }) {
         return {
           dual: txt.slice(0, 90), chips: api.__test.chips(), probe,
           engine: api.__test.getState().engine,
-          hasDualEl: !!w.document.querySelector('.primevocab-subtitle-translation'),
-          overlayOpacity: (w.document.getElementById('primevocab-subtitle-overlay') || {}).style ? w.document.getElementById('primevocab-subtitle-overlay').style.opacity : '?',
+          hasDualEl: !!w.document.querySelector('.proudvocab-subtitle-translation'),
+          overlayOpacity: (w.document.getElementById('proudvocab-subtitle-overlay') || {}).style ? w.document.getElementById('proudvocab-subtitle-overlay').style.opacity : '?',
         };
       })()`);
       const eng = res.engine ? `dual=${res.engine.dualSubtitles} ${res.engine.sourceLang}→${res.engine.targetLang}` : 'engine settings not seen';

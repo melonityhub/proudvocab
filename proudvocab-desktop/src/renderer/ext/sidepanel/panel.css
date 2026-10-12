@@ -1,4 +1,4 @@
-/* ── PrimeVocab Side Panel — Premium Dark Theme ─────────────────────────────── */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
 
@@ -2217,7 +2217,7 @@ body {
 }
 
 /* ── Toast bildirimi ── */
-#primevocab-toast {
+#proudvocab-toast {
   position: fixed;
   bottom: 20px;
   left: 50%;
@@ -2237,11 +2237,11 @@ body {
   transition: opacity 0.2s ease, transform 0.2s ease;
   z-index: 99999;
 }
-#primevocab-toast.toast-show {
+#proudvocab-toast.toast-show {
   opacity: 1;
   transform: translateX(-50%) translateY(0);
 }
-#primevocab-toast.toast-hide {
+#proudvocab-toast.toast-hide {
   opacity: 0;
   transform: translateX(-50%) translateY(8px);
 }
@@ -2455,7 +2455,6 @@ input:checked+.slider:before {
   background-color: var(--green);
   box-shadow: 0 0 8px rgba(16, 185, 129, 0.6);
 }
-
 
 /* Color picker for dual subtitles */
 .color-picker-row {
@@ -4328,8 +4327,6 @@ input:checked+.slider:before {
   gap: 9px;
 }
 
-
-
 .due-pill {
   flex-shrink: 0;
   display: inline-flex;
@@ -4588,7 +4585,7 @@ input:checked+.slider:before {
   padding: 16px;
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  animation: primevocab-fade-in 0.2s ease-out;
+  animation: proudvocab-fade-in 0.2s ease-out;
 }
 
 .shortcuts-modal {
@@ -4904,14 +4901,13 @@ input:checked+.slider:before {
   margin-left: 1px;
 }
 
-
 .word-chip.phrasal-linked {
   color: #c084fc !important;
   border-bottom: 2px dashed #a855f7 !important;
   font-weight: 700 !important;
 }
 
-.word-chip.primevocab-phrasal-linked-hover {
+.word-chip.proudvocab-phrasal-linked-hover {
   background: #a855f7 !important;
   color: #ffffff !important;
   border-bottom-color: transparent !important;
@@ -5484,7 +5480,7 @@ input:checked+.slider:before {
   flex-direction: column;
   gap: 12px;
   flex: 1;
-  animation: primevocab-fade-in 0.25s ease-out;
+  animation: proudvocab-fade-in 0.25s ease-out;
 }
 
 /* 1. Multiple Choice & Fill in Blank */
@@ -5745,7 +5741,7 @@ input:checked+.slider:before {
   font-size: 13px;
   font-weight: 600;
   margin-top: 6px;
-  animation: primevocab-fade-in 0.2s ease-out;
+  animation: proudvocab-fade-in 0.2s ease-out;
 }
 
 /* 3. Word Matching */
@@ -5819,7 +5815,7 @@ input:checked+.slider:before {
   background: rgba(239, 68, 68, 0.1) !important;
   border-color: var(--red) !important;
   color: var(--red) !important;
-  animation: primevocab-shake 0.4s ease-in-out;
+  animation: proudvocab-shake 0.4s ease-in-out;
 }
 
 .match-tile.wrong {
@@ -5830,7 +5826,7 @@ input:checked+.slider:before {
   opacity: 0.5;
 }
 
-@keyframes primevocab-shake {
+@keyframes proudvocab-shake {
   0%, 100% { transform: translateX(0); }
   20%, 60% { transform: translateX(-4px); }
   40%, 80% { transform: translateX(4px); }
@@ -5850,7 +5846,7 @@ input:checked+.slider:before {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
   box-sizing: border-box;
   width: 100%;
-  animation: primevocab-fade-in 0.25s ease-out;
+  animation: proudvocab-fade-in 0.25s ease-out;
 }
 
 .game-result-icon-wrap {
@@ -5998,7 +5994,7 @@ input:checked+.slider:before {
   align-items: center;
   justify-content: center;
   padding: 20px;
-  animation: primevocab-fade-in 0.18s ease-out;
+  animation: proudvocab-fade-in 0.18s ease-out;
 }
 
 .custom-confirm-modal {
@@ -6127,7 +6123,7 @@ input:checked+.slider:before {
   to { transform: scale(1); opacity: 1; }
 }
 
-@keyframes primevocab-fade-in {
+@keyframes proudvocab-fade-in {
   from { opacity: 0; }
   to { opacity: 1; }
 }
@@ -6565,8 +6561,6 @@ input:checked+.slider:before {
   padding: 16px;
 }
 
-
-
 /* ── EXP / PROFILE BANNER ── */
 .user-profile-banner {
   background: linear-gradient(135deg, rgba(56, 189, 248, 0.1), rgba(168, 85, 247, 0.15));
@@ -6757,7 +6751,7 @@ input:checked+.slider:before {
   justify-content: center;
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  animation: primevocab-fade-in 0.25s ease-out;
+  animation: proudvocab-fade-in 0.25s ease-out;
   padding: 16px;
 }
 
@@ -6952,210 +6946,10 @@ input:checked+.slider:before {
   }
 }
 
-#info-mail-link:hover, #about-mail-link:hover {
-  color: #a5b4fc !important;
-  text-decoration: underline !important;
-}
-
 .onboarding-parent-highlight {
   position: relative !important;
   z-index: 10000 !important;
   overflow: visible !important;
-}
-
-
-/* ── Premium / Locked Feature Styles ── */
-.premium-welcome-card {
-  background: linear-gradient(135deg, rgba(20, 26, 52, 0.82) 0%, rgba(10, 14, 30, 0.90) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.14);
-  border-radius: 22px;
-  padding: 24px 20px 20px;
-  max-width: 335px;
-  width: 100%;
-  box-shadow: 0 28px 65px rgba(0, 0, 0, 0.72), 0 0 1px 1px rgba(255, 255, 255, 0.12) inset, 0 12px 36px -8px rgba(99, 102, 241, 0.4);
-  backdrop-filter: blur(28px);
-  -webkit-backdrop-filter: blur(28px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 10px;
-  position: relative;
-  animation: onboarding-slide-up 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-}
-
-.premium-crown-badge {
-  width: 60px;
-  height: 60px;
-  border-radius: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.22), rgba(168, 85, 247, 0.16));
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 10px 25px -4px rgba(99, 102, 241, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.12) inset;
-  margin-bottom: 2px;
-}
-
-.premium-welcome-title {
-  font-size: 17px;
-  font-weight: 800;
-  background: linear-gradient(135deg, #a5b4fc 0%, #c084fc 50%, #818cf8 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  line-height: 1.3;
-  letter-spacing: 0.3px;
-  text-shadow: 0 2px 12px rgba(99, 102, 241, 0.35);
-}
-
-.premium-welcome-desc {
-  font-size: 12px;
-  color: #94a3b8;
-  line-height: 1.55;
-  font-weight: 500;
-  margin-bottom: 4px;
-}
-
-.premium-feature-list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 100%;
-  margin-bottom: 8px;
-  text-align: left;
-}
-
-.premium-feature-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 8px 12px;
-  transition: background 0.2s ease, border-color 0.2s ease;
-}
-
-.premium-feature-item:hover {
-  background: rgba(99, 102, 241, 0.08);
-  border-color: rgba(99, 102, 241, 0.25);
-}
-
-.premium-feat-icon {
-  width: 22px;
-  height: 22px;
-  border-radius: 7px;
-  background: rgba(99, 102, 241, 0.18);
-  border: 1px solid rgba(99, 102, 241, 0.32);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  margin-top: 1px;
-}
-
-.premium-feat-text {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.premium-feat-text strong {
-  font-size: 12px;
-  font-weight: 700;
-  color: #f8fafc;
-}
-
-.premium-feat-text span {
-  font-size: 11px;
-  color: #94a3b8;
-  line-height: 1.4;
-}
-
-.premium-welcome-btn {
-  width: 100%;
-  padding: 10px 16px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 800;
-  font-family: var(--font);
-  border: none;
-  cursor: pointer;
-  box-shadow: 0 4px 18px rgba(99, 102, 241, 0.45);
-  transition: all 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.premium-welcome-btn:hover {
-  box-shadow: 0 6px 24px rgba(99, 102, 241, 0.65);
-  transform: translateY(-1.5px);
-}
-
-.premium-welcome-btn:active {
-  transform: translateY(0);
-}
-.game-card.locked {
-  opacity: 0.5;
-  cursor: not-allowed !important;
-  position: relative;
-  border: 1px solid rgba(251, 191, 36, 0.2) !important;
-  background: rgba(251, 191, 36, 0.02) !important;
-  transition: all 0.2s ease;
-}
-
-.game-card.locked:hover {
-  opacity: 0.7;
-  border-color: rgba(251, 191, 36, 0.4) !important;
-}
-
-.game-card.locked::after {
-  content: "🔒 Premium";
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  font-size: 9px;
-  font-weight: 700;
-  color: #fbbf24;
-  background: rgba(251, 191, 36, 0.15);
-  border: 1px solid rgba(251, 191, 36, 0.3);
-  padding: 2px 6px;
-  border-radius: 4px;
-}
-
-.locked-feature-indicator {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  color: #fbbf24 !important;
-  font-size: 11px;
-  font-weight: 600;
-}
-
-/* Locked settings or buttons styling */
-.setting-row.locked, .settings-group.locked {
-  opacity: 0.65;
-  position: relative;
-}
-
-.setting-row.locked::before {
-  content: "🔒 Premium";
-  position: absolute;
-  right: 50px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 9px;
-  font-weight: 700;
-  color: #fbbf24;
-  background: rgba(251, 191, 36, 0.15);
-  border: 1px solid rgba(251, 191, 36, 0.3);
-  padding: 2px 6px;
-  border-radius: 4px;
-  pointer-events: none;
 }
 
 /* Limit göstergesi animasyonları */
@@ -7169,7 +6963,6 @@ input:checked+.slider:before {
   text-shadow: 0 0 4px rgba(251, 191, 36, 0.5);
 }
 
-/* Premium range slider styles */
 input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
@@ -7373,16 +7166,6 @@ body.is-mobile-view .mobile-settings-view {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-.mobile-user-license {
-  font-size: 10px;
-  font-weight: 800;
-  padding: 2px 7px;
-  border-radius: 4px;
-  background: rgba(251, 191, 36, 0.2);
-  color: #fbbf24;
-  border: 1px solid rgba(251, 191, 36, 0.4);
 }
 
 .mobile-select {
@@ -7834,8 +7617,6 @@ body.is-mobile-view .mobile-settings-view {
   font-weight: 500;
   margin-top: 4px;
 }
-
-
 
 .color-swatch-row {
   position: relative;
@@ -8376,18 +8157,6 @@ body.is-mobile-view .mobile-settings-view {
   background: var(--surface-3);
 }
 
-.btn-premium {
-  background: rgba(251, 191, 36, 0.14);
-  border-color: rgba(251, 191, 36, 0.4);
-  color: #fbbf24;
-}
-.btn-premium:hover {
-  background: rgba(251, 191, 36, 0.22);
-}
-.btn-premium:active {
-  background: rgba(251, 191, 36, 0.3);
-}
-
 .btn-danger {
   background: rgba(239, 68, 68, 0.12);
   border-color: rgba(239, 68, 68, 0.28);
@@ -8659,10 +8428,6 @@ body.is-mobile-view .mobile-settings-view {
   border-color: rgba(99, 102, 241, 0.35);
   background: var(--surface-2);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
-}
-
-.game-tile.locked {
-  opacity: 0.45;
 }
 
 .game-tile-icon {
@@ -9462,7 +9227,7 @@ body.is-mobile-view .mobile-settings-view {
   margin-top: 10px;
   text-align: center;
   font-family: var(--font);
-  animation: primevocab-fade-in 0.2s ease-out;
+  animation: proudvocab-fade-in 0.2s ease-out;
 }
 
 /* ── Modern Game Feedback Card ────────────────────────────────────────────── */
@@ -9944,70 +9709,6 @@ body.is-mobile-view .mobile-settings-view {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
-}
-
-/* ── Premium Locked Setting Rows & PRO Badges ── */
-.premium-pro-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  font-size: 9.5px;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  padding: 1.5px 6px;
-  border-radius: 999px;
-  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
-  color: #ffffff;
-  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.35);
-  margin-left: 6px;
-  vertical-align: middle;
-  text-transform: uppercase;
-}
-
-.settings-block.premium-locked,
-.dropdown-toggle-row.premium-locked,
-.smart-yt-note.premium-locked,
-.dropdown-item.premium-locked {
-  position: relative;
-  cursor: pointer !important;
-  opacity: 0.55;
-  transition: opacity 0.2s ease, background 0.2s ease;
-}
-
-.settings-block.premium-locked:hover,
-.dropdown-toggle-row.premium-locked:hover,
-.smart-yt-note.premium-locked:hover,
-.dropdown-item.premium-locked:hover {
-  opacity: 0.8;
-  background: rgba(99, 102, 241, 0.05);
-  border-radius: var(--radius-sm);
-}
-
-.settings-block.premium-locked .settings-row-title,
-.settings-block.premium-locked .settings-card-label,
-.dropdown-item.premium-locked .dropdown-item-label,
-.dropdown-item.premium-locked .setting-ico {
-  color: var(--text-dim) !important;
-}
-
-.settings-block.premium-locked .switch2,
-.settings-block.premium-locked .segmented,
-.settings-block.premium-locked .level-check-grid,
-.settings-block.premium-locked .color-swatch-row {
-  opacity: 0.45;
-  pointer-events: none;
-}
-
-.settings-block.premium-locked .premium-lock-overlay,
-.dropdown-toggle-row.premium-locked .premium-lock-overlay,
-.dropdown-item.premium-locked .premium-lock-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  cursor: pointer;
 }
 
 /* ── Modern Media Scene Popover (source-info-popup) ── */
