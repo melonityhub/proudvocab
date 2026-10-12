@@ -7,7 +7,7 @@
  *
  * Output shape (what the ProudVocab engine expects):
  *   cues : [{ i, start, end, text }]      seconds, text may contain \n
- *   map  : Map(start -> {start,end,text}) for window.__primevocab_subtitles
+ *   map  : Map(start -> {start,end,text}) for window.__proudvocab_subtitles
  */
 (function (global) {
   'use strict';
@@ -278,7 +278,7 @@
     return { kind, cues, warnings };
   }
 
-  /** Map(startSeconds -> {start,end,text}) – the shape __primevocab_subtitles uses. */
+  /** Map(startSeconds -> {start,end,text}) – the shape __proudvocab_subtitles uses. */
   function buildMap(cues) {
     const m = new Map();
     for (const c of cues) m.set(Number(c.start.toFixed(3)), { start: c.start, end: c.end, text: c.text });

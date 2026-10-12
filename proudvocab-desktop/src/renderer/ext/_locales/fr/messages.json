@@ -1,6 +1,6 @@
 {
   "ext_name": {
-    "message": "PrimeVocab - Double sous-titre & vocabulaire de répétition espacée"
+    "message": "ProudVocab Desktop – Apprendre le vocabulaire avec des vidéos locales"
   },
   "btn_ok": {
     "message": "OK"
@@ -12,13 +12,13 @@
     "message": "✗ Faux! Correct: {word}"
   },
   "ext_desc": {
-    "message": "Sous-titres bilingues, pause intelligente et apprentissage du vocabulaire (SRS) sur Amazon Prime Video, Netflix et YouTube."
+    "message": "Apprenez le vocabulaire avec vos propres vidéos et sous-titres SRT : mots cliquables, niveaux CECRL, traductions, révision SRS, jeux et export Anki."
   },
   "open_panel": {
-    "message": "Ouvrir le panneau PrimeVocab"
+    "message": "Ouvrir le panneau ProudVocab"
   },
   "cmd_open_panel": {
-    "message": "Ouvrir/Fermer le panneau PrimeVocab"
+    "message": "Ouvrir/Fermer le panneau ProudVocab"
   },
   "cmd_seek_back": {
     "message": "Reculer"
@@ -51,7 +51,7 @@
     "message": "s"
   },
   "app_title": {
-    "message": "PrimeVocab"
+    "message": "ProudVocab"
   },
   "word_count_lbl": {
     "message": "Mots"
@@ -186,7 +186,7 @@
     "message": "Affiche une icône semi-transparente sur le lecteur vidéo pour ouvrir le panneau lorsqu'il est fermé."
   },
   "tooltip_quick_access": {
-    "message": "Ouvrir le panneau PrimeVocab"
+    "message": "Ouvrir le panneau ProudVocab"
   },
   "btn_toggle_family": {
     "message": ""
@@ -1593,10 +1593,10 @@
     "message": "Démarrer le guide"
   },
   "onboarding_welcome_title": {
-    "message": "Bienvenue sur PrimeVocab !"
+    "message": "Bienvenue sur ProudVocab !"
   },
   "onboarding_welcome_desc": {
-    "message": "PrimeVocab est un assistant intelligent pour apprendre du vocabulaire en regardant des vidéos. Découvrons les fonctionnalités clés en 1 minute !"
+    "message": "ProudVocab est un assistant intelligent pour apprendre du vocabulaire en regardant des vidéos. Découvrons les fonctionnalités clés en 1 minute !"
   },
   "onboarding_subtitles_title": {
     "message": "Sous-titres interactifs"
@@ -1659,22 +1659,10 @@
     "message": "À propos de l'extension"
   },
   "info_title": {
-    "message": "À propos de PrimeVocab"
+    "message": "À propos de ProudVocab"
   },
   "info_desc": {
-    "message": "PrimeVocab est une extension intelligente qui vous permet d'apprendre des langues en utilisant des sous-titres doubles et la répétition espacée tout en regardant des vidéos."
-  },
-  "info_developer": {
-    "message": "Développeur"
-  },
-  "info_contact": {
-    "message": "Contact"
-  },
-  "info_legal": {
-    "message": "Confidentialité & Conditions"
-  },
-  "info_legal_view": {
-    "message": "Lire"
+    "message": "ProudVocab est un entraîneur de vocabulaire pour vos vidéos locales : double sous-titre et répétition espacée pendant le visionnage."
   },
   "profile_btn_title": {
     "message": "Profil de l'utilisateur"
@@ -1742,45 +1730,6 @@
   "archive_csv_backup_warning": {
     "message": "Les mots exportés au format CSV ne peuvent pas être directement réimportés dans l'application. Ce n'est pas un mécanisme de sauvegarde.\n\nPour une sauvegarde complète, veuillez utiliser l'option 'Sauvegarder' dans les paramètres ou synchroniser votre compte.\n\nVoulez-vous continuer et télécharger le fichier CSV ?"
   },
-  "premium_welcome_title": {
-    "message": "Bienvenue dans Premium !"
-  },
-  "premium_welcome_desc": {
-    "message": "Bienvenue dans PrimeVocab Premium ! Toutes les limites sont levées :"
-  },
-  "premium_feat_limit_title": {
-    "message": "Vocabulaire Illimité"
-  },
-  "premium_feat_limit": {
-    "message": "La limite de 50 mots est levée. Enregistrez autant de mots que vous voulez."
-  },
-  "premium_feat_sync_title": {
-    "message": "Synchronisation Google Drive"
-  },
-  "premium_feat_sync": {
-    "message": "Synchronisez vos mots et séries automatiquement sur tous vos appareils."
-  },
-  "premium_feat_practice_title": {
-    "message": "Entraînement SRS Avancé"
-  },
-  "premium_feat_practice": {
-    "message": "Révisez des cartes mémoire sans limite quotidienne de révision."
-  },
-  "premium_feat_games_title": {
-    "message": "Tous les Mini-Jeux Débloqués"
-  },
-  "premium_feat_games": {
-    "message": "Accédez aux 6 mini-jeux et à l'ensemble de votre dictionnaire."
-  },
-  "premium_feat_export_title": {
-    "message": "Export Anki & JSON"
-  },
-  "premium_feat_export": {
-    "message": "Exportez vos mots directement au format Anki ou en sauvegarde JSON."
-  },
-  "premium_welcome_btn": {
-    "message": "Super, C'est Parti !"
-  },
   "profile_sync_status_disabled": {
     "message": "Connexion active (Synchronisation désactivée)"
   },
@@ -1790,47 +1739,14 @@
   "archive_inactive_badge_label": {
     "message": "Inactif dans les sous-titres"
   },
-  "premium_smart_locked_desc": {
-    "message": "Vous devez passer à Premium pour utiliser les fonctionnalités intelligentes (Shadowing, retour automatique, ralenti, etc.)."
-  },
-  "premium_game_locked_desc": {
-    "message": "Vous devez passer à Premium pour jouer à ce jeu."
-  },
-  "premium_modal_title": {
-    "message": "Fonctionnalité Premium"
-  },
-  "premium_modal_buy_btn": {
-    "message": "Acheter Premium"
-  },
-  "premium_modal_close_btn": {
-    "message": "Fermer"
-  },
   "profile_login_btn": {
     "message": "Se connecter avec Google"
-  },
-  "premium_sync_required_desc": {
-    "message": "Votre compte Google est connecté, mais vous avez besoin d'un abonnement Premium pour utiliser la synchronisation cloud."
-  },
-  "profile_buy_premium_btn": {
-    "message": "Devenir Premium"
-  },
-  "profile_manage_subscription_btn": {
-    "message": "Gérer l'abonnement"
   },
   "archive_capacity_text": {
     "message": "Capacité : {count} / 50 mots"
   },
   "archive_limit_reached_text": {
     "message": " (Limite atteinte !)"
-  },
-  "archive_go_premium": {
-    "message": "Devenir Premium"
-  },
-  "archive_limit_modal_title": {
-    "message": "Limite de capacité"
-  },
-  "archive_limit_modal_desc": {
-    "message": "Passez à Premium pour enregistrer plus de mots et débloquer toutes les fonctionnalités."
   },
   "settings_show_learned_games_title": {
     "message": "Afficher les mots appris dans les jeux"
@@ -1940,21 +1856,6 @@
   "settings_export_json_success": {
     "message": "Sauvegarde JSON téléchargée !"
   },
-  "premium_backup_locked_desc": {
-    "message": "Vous devez passer à Premium pour utiliser la fonction de sauvegarde des données."
-  },
-  "premium_restore_locked_desc": {
-    "message": "Vous devez passer à Premium pour utiliser la fonction de restauration des sauvegardes."
-  },
-  "premium_anki_locked_desc": {
-    "message": "Vous devez passer à Premium pour utiliser la fonction d'exportation vers Anki."
-  },
-  "premium_connect_google_first": {
-    "message": "Connectez votre compte Google pour continuer..."
-  },
-  "premium_google_connect_cancelled": {
-    "message": "Connexion Google annulée."
-  },
   "settings_restore_success_alert": {
     "message": "Sauvegarde restaurée avec succès ! Vos mots enregistrés et vos paramètres ont été mis à jour."
   },
@@ -1994,6 +1895,9 @@
   "toast_login_success": {
     "message": "🎉 Connexion réussie ! Compte associé."
   },
+  "toast_login_unavailable": {
+    "message": "La synchronisation Google Drive n'est pas disponible dans cette version."
+  },
   "toast_logout_success": {
     "message": "Déconnexion réussie"
   },
@@ -2032,21 +1936,6 @@
   },
   "translating_ellipsis": {
     "message": "Traduction en cours..."
-  },
-  "premium_dual_sub_desc": {
-    "message": "Passez à Premium pour afficher simultanément les sous-titres d'apprentissage et natifs."
-  },
-  "premium_shadowing_desc": {
-    "message": "Passez à Premium pour activer le mode Shadowing avec pauses automatiques pour pratiquer l'expression orale."
-  },
-  "premium_auto_rewind_desc": {
-    "message": "Passez à Premium pour activer le rembobinage automatique lors de l'enregistrement de nouveaux mots."
-  },
-  "premium_auto_slow_mo_desc": {
-    "message": "Passez à Premium pour ralentir automatiquement la lecture lors des passages contenant des mots difficiles."
-  },
-  "premium_word_family_desc": {
-    "message": "Passez à Premium pour explorer les familles de mots et les racines morphologiques."
   },
   "settings_auto_translate_fallback": {
     "message": "Traduction automatique des sous-titres (GT)"

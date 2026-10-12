@@ -1,6 +1,6 @@
 {
   "ext_name": {
-    "message": "PrimeVocab - Dual Subtitle & Spaced Repetition Vocabulary"
+    "message": "ProudVocab Desktop – Local Video Vocabulary Trainer"
   },
   "btn_ok": {
     "message": "OK"
@@ -12,13 +12,13 @@
     "message": "✗ Wrong! Correct: {word}"
   },
   "ext_desc": {
-    "message": "Dual subtitles, smart auto-pause, and spaced repetition (SRS) vocabulary learning on Amazon Prime Video, Netflix, and YouTube."
+    "message": "Learn vocabulary from your own video files and SRT subtitles: clickable word chips, CEFR levels, translations, SRS review, games and Anki export."
   },
   "open_panel": {
-    "message": "Open PrimeVocab Panel"
+    "message": "Open ProudVocab Panel"
   },
   "cmd_open_panel": {
-    "message": "Open/Close PrimeVocab Panel"
+    "message": "Open/Close ProudVocab Panel"
   },
   "cmd_seek_back": {
     "message": "Rewind"
@@ -51,7 +51,7 @@
     "message": "s"
   },
   "app_title": {
-    "message": "PrimeVocab"
+    "message": "ProudVocab"
   },
   "word_count_lbl": {
     "message": "Words"
@@ -186,7 +186,7 @@
     "message": "Displays a semi-transparent icon on the video player to open the panel when closed. Clicking it opens the panel."
   },
   "tooltip_quick_access": {
-    "message": "Open PrimeVocab Panel"
+    "message": "Open ProudVocab Panel"
   },
   "btn_toggle_family": {
     "message": ""
@@ -1608,10 +1608,10 @@
     "message": "Start Tour"
   },
   "onboarding_welcome_title": {
-    "message": "Welcome to PrimeVocab!"
+    "message": "Welcome to ProudVocab!"
   },
   "onboarding_welcome_desc": {
-    "message": "PrimeVocab is a smart assistant designed to help you learn vocabulary while watching videos. Let's learn the key features in 1 minute!"
+    "message": "ProudVocab is a smart assistant designed to help you learn vocabulary while watching videos. Let's learn the key features in 1 minute!"
   },
   "onboarding_subtitles_title": {
     "message": "Interactive Subtitles"
@@ -1674,22 +1674,10 @@
     "message": "About Extension"
   },
   "info_title": {
-    "message": "About PrimeVocab"
+    "message": "About ProudVocab"
   },
   "info_desc": {
-    "message": "PrimeVocab is an intelligent extension that lets you learn languages using dual subtitles and spaced repetition while watching videos."
-  },
-  "info_developer": {
-    "message": "Developer"
-  },
-  "info_contact": {
-    "message": "Contact"
-  },
-  "info_legal": {
-    "message": "Privacy & Terms"
-  },
-  "info_legal_view": {
-    "message": "Read"
+    "message": "ProudVocab is a vocabulary trainer that runs on your own video files: dual subtitles and spaced repetition while you watch."
   },
   "profile_btn_title": {
     "message": "User Profile"
@@ -1757,45 +1745,6 @@
   "archive_csv_backup_warning": {
     "message": "Words exported in CSV format cannot be directly imported back to the app. This is not a backup mechanism.\n\nFor a full backup, please use the 'Backup' option in settings or synchronize your account.\n\nDo you want to proceed and download the CSV?"
   },
-  "premium_welcome_title": {
-    "message": "Welcome to Premium!"
-  },
-  "premium_welcome_desc": {
-    "message": "Welcome to PrimeVocab Premium! All limits are unlocked and your perks are active:"
-  },
-  "premium_feat_limit_title": {
-    "message": "Unlimited Word Vault"
-  },
-  "premium_feat_limit": {
-    "message": "The 50-word free limit is removed. Save as many words as you want."
-  },
-  "premium_feat_sync_title": {
-    "message": "Google Drive Cloud Sync"
-  },
-  "premium_feat_sync": {
-    "message": "Automatically sync your vocabulary and streak progress across all devices."
-  },
-  "premium_feat_practice_title": {
-    "message": "Advanced SRS Training"
-  },
-  "premium_feat_practice": {
-    "message": "Study flashcards with no daily review limits using spaced repetition."
-  },
-  "premium_feat_games_title": {
-    "message": "All Mini-Games Unlocked"
-  },
-  "premium_feat_games": {
-    "message": "Access all 6 vocabulary mini-games and full learning vault."
-  },
-  "premium_feat_export_title": {
-    "message": "Anki & JSON Export"
-  },
-  "premium_feat_export": {
-    "message": "Export all saved words directly to Anki deck or JSON backup format."
-  },
-  "premium_welcome_btn": {
-    "message": "Awesome, Let's Start!"
-  },
   "profile_sync_status_disabled": {
     "message": "Connection Active (Sync Disabled)"
   },
@@ -1805,47 +1754,14 @@
   "archive_inactive_badge_label": {
     "message": "Inactive in Subtitles"
   },
-  "premium_smart_locked_desc": {
-    "message": "You need to upgrade to Premium to use Smart Features (Shadowing, Auto Rewind, Slow Motion, etc.)."
-  },
-  "premium_game_locked_desc": {
-    "message": "You need to upgrade to Premium to play this game."
-  },
-  "premium_modal_title": {
-    "message": "Premium Feature"
-  },
-  "premium_modal_buy_btn": {
-    "message": "Get Premium"
-  },
-  "premium_modal_close_btn": {
-    "message": "Close"
-  },
   "profile_login_btn": {
     "message": "Sign in with Google"
-  },
-  "premium_sync_required_desc": {
-    "message": "Your Google account is connected, but you need a Premium membership to use cloud synchronization."
-  },
-  "profile_buy_premium_btn": {
-    "message": "Go Premium"
-  },
-  "profile_manage_subscription_btn": {
-    "message": "Manage Subscription"
   },
   "archive_capacity_text": {
     "message": "Capacity: {count} / 50 Words"
   },
   "archive_limit_reached_text": {
     "message": " (Limit Reached!)"
-  },
-  "archive_go_premium": {
-    "message": "Go Premium"
-  },
-  "archive_limit_modal_title": {
-    "message": "Capacity Limit"
-  },
-  "archive_limit_modal_desc": {
-    "message": "Upgrade to Premium to save more words and unlock all features."
   },
   "settings_show_learned_games_title": {
     "message": "Show Learned Words in Games"
@@ -1946,21 +1862,6 @@
   "settings_export_json_success": {
     "message": "JSON backup downloaded!"
   },
-  "premium_backup_locked_desc": {
-    "message": "You need to upgrade to Premium to use the data backup feature."
-  },
-  "premium_restore_locked_desc": {
-    "message": "You need to upgrade to Premium to use the backup restore feature."
-  },
-  "premium_anki_locked_desc": {
-    "message": "You need to upgrade to Premium to use the Anki export feature."
-  },
-  "premium_connect_google_first": {
-    "message": "Connect your Google account to continue..."
-  },
-  "premium_google_connect_cancelled": {
-    "message": "Google connection cancelled."
-  },
   "settings_restore_success_alert": {
     "message": "Backup restored successfully! Your saved words and settings have been updated."
   },
@@ -1993,6 +1894,9 @@
   },
   "toast_login_success": {
     "message": "🎉 Login successful! Account linked."
+  },
+  "toast_login_unavailable": {
+    "message": "Google Drive sync is not available in this build."
   },
   "toast_logout_success": {
     "message": "Logged out successfully"
@@ -2032,21 +1936,6 @@
   },
   "translating_ellipsis": {
     "message": "Translating..."
-  },
-  "premium_dual_sub_desc": {
-    "message": "Upgrade to Premium to display both learning and native subtitles simultaneously with Dual Subtitles."
-  },
-  "premium_shadowing_desc": {
-    "message": "Upgrade to Premium to activate Shadowing mode for automated subtitle pauses and speaking practice."
-  },
-  "premium_auto_rewind_desc": {
-    "message": "Upgrade to Premium to enable Auto Rewind and replay video context whenever you save a new word."
-  },
-  "premium_auto_slow_mo_desc": {
-    "message": "Upgrade to Premium to enable Smart Slow-Mo, automatically slowing down playback on challenging vocabulary."
-  },
-  "premium_word_family_desc": {
-    "message": "Upgrade to Premium to explore word families and morphological roots for deeper vocabulary mastery."
   },
   "settings_auto_translate_fallback": {
     "message": "Auto Subtitle Translation (GT)"

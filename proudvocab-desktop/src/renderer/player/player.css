@@ -215,21 +215,21 @@ body.pv-no-video #pv-controls{display:none}
 .pv-notice button:hover{background:#3b2c15}
 
 /* keep the extension overlay clickable above the video but below our popups */
-#primevocab-subtitle-overlay{z-index:2147483000 !important}
+#proudvocab-subtitle-overlay{z-index:2147483000 !important}
 
 body.pv-cursor-none{cursor:none}
 
 /* ------------------------------------------------- engine overlay polish */
 /* The extension's overlay line is `white-space:nowrap` because YouTube/Prime
    feed it short ASR chunks; SRT lines are full sentences and must wrap. */
-#primevocab-subtitle-overlay .primevocab-subtitle-line,
-#primevocab-subtitle-overlay .primevocab-subtitle-translation{
+#proudvocab-subtitle-overlay .proudvocab-subtitle-line,
+#proudvocab-subtitle-overlay .proudvocab-subtitle-translation{
   white-space:normal !important;
   overflow-wrap:break-word;
 }
-#primevocab-subtitle-overlay{max-width:min(86%,980px) !important;}
+#proudvocab-subtitle-overlay{max-width:min(86%,980px) !important;}
 
 /* keep the engine's "open panel" bubble inside the stage, top-right, tidy */
-#primevocab-quick-access-btn{
+#proudvocab-quick-access-btn{
   top:14px !important;right:14px !important;left:auto !important;bottom:auto !important;
 }

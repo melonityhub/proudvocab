@@ -1,15 +1,15 @@
 {
   "ext_name": {
-    "message": "PrimeVocab - Çift Altyazılı Kelime Öğrenme Eklentisi"
+    "message": "ProudVocab Desktop – Yerel Video ile Kelime Öğrenme"
   },
   "ext_desc": {
-    "message": "Amazon Prime Video, Netflix ve YouTube üzerinde çift altyazı, akıllı duraklatma ve aralıklı tekrar (SRS) kelime öğrenme aracı."
+    "message": "Kendi video dosyalarınız ve SRT altyazılarınızla kelime öğrenin: tıklanabilir kelime çipleri, CEFR seviyeleri, çeviriler, SRS tekrarı, oyunlar ve Anki dışa aktarımı."
   },
   "open_panel": {
-    "message": "PrimeVocab Panelini Aç"
+    "message": "ProudVocab Panelini Aç"
   },
   "cmd_open_panel": {
-    "message": "PrimeVocab panelini aç/kapat"
+    "message": "ProudVocab panelini aç/kapat"
   },
   "cmd_seek_back": {
     "message": "Geri sar"
@@ -42,7 +42,7 @@
     "message": "sn"
   },
   "app_title": {
-    "message": "PrimeVocab"
+    "message": "ProudVocab"
   },
   "word_count_lbl": {
     "message": "Kelime"
@@ -177,7 +177,7 @@
     "message": "Panel kapalıyken video üzerinde paneli açmak için yarı saydam bir simge gösterir. Tıklayınca paneli açar."
   },
   "tooltip_quick_access": {
-    "message": "PrimeVocab Panelini Aç"
+    "message": "ProudVocab Panelini Aç"
   },
   "btn_toggle_family": {
     "message": ""
@@ -1611,10 +1611,10 @@
     "message": "Turu Başlat"
   },
   "onboarding_welcome_title": {
-    "message": "PrimeVocab'e Hoş Geldiniz!"
+    "message": "ProudVocab'e Hoş Geldiniz!"
   },
   "onboarding_welcome_desc": {
-    "message": "PrimeVocab, video izlerken kelime öğrenmenizi sağlayan akıllı bir asistandır. Temel özellikleri 1 dakikada tanıyalım!"
+    "message": "ProudVocab, video izlerken kelime öğrenmenizi sağlayan akıllı bir asistandır. Temel özellikleri 1 dakikada tanıyalım!"
   },
   "onboarding_subtitles_title": {
     "message": "İnteraktif Altyazılar"
@@ -1677,22 +1677,10 @@
     "message": "Eklenti Hakkında"
   },
   "info_title": {
-    "message": "PrimeVocab Hakkında"
+    "message": "ProudVocab Hakkında"
   },
   "info_desc": {
-    "message": "PrimeVocab, video izlerken çift altyazı ve aralıklı tekrar yöntemiyle dil öğrenmenizi sağlayan akıllı bir eklentidir."
-  },
-  "info_developer": {
-    "message": "Geliştirici"
-  },
-  "info_contact": {
-    "message": "İletişim"
-  },
-  "info_legal": {
-    "message": "Gizlilik & Koşullar"
-  },
-  "info_legal_view": {
-    "message": "Oku"
+    "message": "ProudVocab, kendi video dosyalarınız üzerinde çalışan bir kelime öğrenme uygulamasıdır: izlerken çift altyazı ve aralıklı tekrar."
   },
   "profile_btn_title": {
     "message": "Kullanıcı Profili"
@@ -1760,45 +1748,6 @@
   "archive_csv_backup_warning": {
     "message": "CSV formatında dışa aktarılan kelimeler doğrudan uygulamaya geri yüklenemez. Bu işlem tam bir yedekleme değildir.\n\nYedekleme için ayarlar sayfasındaki 'Yedekle' seçeneğini kullanabilir veya hesabınızı senkronize edebilirsiniz.\n\nDevam etmek ve CSV indirmek istiyor musunuz?"
   },
-  "premium_welcome_title": {
-    "message": "Premium'a Hoş Geldiniz!"
-  },
-  "premium_welcome_desc": {
-    "message": "Tüm sınırlar kaldırıldı! PrimeVocab'in tüm gelişmiş ayrıcalıklarına artık sınırsız erişebilirsiniz:"
-  },
-  "premium_feat_limit_title": {
-    "message": "Sınırsız Kelime Havuzu"
-  },
-  "premium_feat_limit": {
-    "message": "50 kelime limiti kalktı, dilediğiniz kadar kelime kaydedin."
-  },
-  "premium_feat_sync_title": {
-    "message": "Google Drive Bulut Eşitleme"
-  },
-  "premium_feat_sync": {
-    "message": "Tüm cihazlarınızdaki kelimeleri ve serilerinizi otomatik senkronize edin."
-  },
-  "premium_feat_practice_title": {
-    "message": "Gelişmiş SRS Alıştırmaları"
-  },
-  "premium_feat_practice": {
-    "message": "Günlük sınır olmadan kelime kartı ve hafıza antrenmanları yapın."
-  },
-  "premium_feat_games_title": {
-    "message": "Tüm Mini Oyunlar Aktif"
-  },
-  "premium_feat_games": {
-    "message": "6 mini oyunun tamamına ve tüm kelime arşivine erişin."
-  },
-  "premium_feat_export_title": {
-    "message": "Anki & JSON Dışa Aktarım"
-  },
-  "premium_feat_export": {
-    "message": "Kelimelerinizi tek tıkla Anki ve JSON yedek formatında dışa aktarın."
-  },
-  "premium_welcome_btn": {
-    "message": "Harika, Başlayalım!"
-  },
   "profile_sync_status_disabled": {
     "message": "Bağlantı Aktif (Senkronizasyon Devre Dışı)"
   },
@@ -1808,47 +1757,14 @@
   "archive_inactive_badge_label": {
     "message": "Altyazıda Pasif"
   },
-  "premium_smart_locked_desc": {
-    "message": "Akıllı Özellikleri (Shadowing, Otomatik Geri Sarma, Yavaşlatma vb.) kullanabilmek için Premium üyeliğe yükseltmeniz gerekmektedir."
-  },
-  "premium_game_locked_desc": {
-    "message": "Bu oyunu oynayabilmek için Premium üyeliğe yükseltmeniz gerekmektedir."
-  },
-  "premium_modal_title": {
-    "message": "Premium Özellik"
-  },
-  "premium_modal_buy_btn": {
-    "message": "Premium Satın Al"
-  },
-  "premium_modal_close_btn": {
-    "message": "Kapat"
-  },
   "profile_login_btn": {
     "message": "Google ile Giriş Yap"
-  },
-  "premium_sync_required_desc": {
-    "message": "Google hesabınız bağlandı, ancak bulut senkronizasyonu özelliğini kullanabilmek için Premium üyeliğe yükseltmeniz gerekmektedir."
-  },
-  "profile_buy_premium_btn": {
-    "message": "Premium Ol"
-  },
-  "profile_manage_subscription_btn": {
-    "message": "Aboneliği Yönet"
   },
   "archive_capacity_text": {
     "message": "Kapasite: {count} / 50 Kelime"
   },
   "archive_limit_reached_text": {
     "message": " (Limit Doldu!)"
-  },
-  "archive_go_premium": {
-    "message": "Premium'a Geç"
-  },
-  "archive_limit_modal_title": {
-    "message": "Kapasite Sınırı"
-  },
-  "archive_limit_modal_desc": {
-    "message": "Daha fazla kelime kaydetmek ve tüm özellikleri açmak için Premium sürüme yükseltin."
   },
   "settings_show_learned_games_title": {
     "message": "Oyunlarda Öğrenilenleri Göster"
@@ -1943,21 +1859,6 @@
   "settings_export_json_success": {
     "message": "JSON yedeği indirildi!"
   },
-  "premium_backup_locked_desc": {
-    "message": "Veri yedekleme özelliğini kullanabilmek için Premium üyeliğe yükseltmeniz gerekmektedir."
-  },
-  "premium_restore_locked_desc": {
-    "message": "Yedek geri yükleme özelliğini kullanabilmek için Premium üyeliğe yükseltmeniz gerekmektedir."
-  },
-  "premium_anki_locked_desc": {
-    "message": "Anki'ye veri aktarma özelliğini kullanabilmek için Premium üyeliğe yükseltmeniz gerekmektedir."
-  },
-  "premium_connect_google_first": {
-    "message": "Devam etmek için Google hesabınızı bağlayın..."
-  },
-  "premium_google_connect_cancelled": {
-    "message": "Google bağlantısı iptal edildi."
-  },
   "btn_ok": {
     "message": "Tamam"
   },
@@ -1993,6 +1894,9 @@
   },
   "toast_login_success": {
     "message": "🎉 Giriş başarılı! Hesabınız bağlandı."
+  },
+  "toast_login_unavailable": {
+    "message": "Google Drive eşitleme bu sürümde kullanılamıyor."
   },
   "toast_logout_success": {
     "message": "Oturum kapatıldı"
@@ -2032,21 +1936,6 @@
   },
   "translating_ellipsis": {
     "message": "Çeviriliyor..."
-  },
-  "premium_dual_sub_desc": {
-    "message": "Çift altyazı desteği ile hem hedef dilde hem ana dilde altyazıları aynı anda görüntülemek için Premium üyeliğe yükseltin."
-  },
-  "premium_shadowing_desc": {
-    "message": "Altyazı duraklatma ve konuşma pratiği yapmanızı sağlayan Shadowing modunu açmak için Premium üyeliğe yükseltin."
-  },
-  "premium_auto_rewind_desc": {
-    "message": "Kelime kaydettiğinizde videoyu otomatik geri sararak bağlamı tekrar dinlemenizi sağlayan özelliği kullanmak için Premium üyeliğe yükseltin."
-  },
-  "premium_auto_slow_mo_desc": {
-    "message": "Zor ve ileri seviye kelimeler geçtiğinde video hızını otomatik düşüren Akıllı Yavaşlatma özelliğini kullanmak için Premium üyeliğe yükseltin."
-  },
-  "premium_word_family_desc": {
-    "message": "Kelime köklerini ve türemiş kelime ailelerini inceleyebilmek için Premium üyeliğe yükseltin."
   },
   "settings_auto_translate_fallback": {
     "message": "Otomatik Altyazı Çevirisi (GT)"

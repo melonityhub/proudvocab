@@ -1,1 +1,0 @@
-try{const e=document.createElement("script");e.src=chrome.runtime.getURL("content/intercept.js"),e.onload=()=>e.remove(),(document.head||document.documentElement).appendChild(e)}catch(e){console.error("[PV-loader] Failed to inject intercept.js:",e)}

@@ -4,11 +4,10 @@
 <meta charset="utf-8">
 <title>ProudVocab background</title>
 <!--
-  This hidden frame replaces the MV3 service worker.
-  It runs the ORIGINAL background.js (message router, CEFR lookup, Google
-  Translate, dictionary API, word-family builder, license client) on top of the
-  chrome.* shim. The three files that background.js pulls in with
-  importScripts() are loaded here as normal <script> tags instead.
+  Hidden frame that hosts the background engine (message router, CEFR lookup,
+  Google Translate, dictionary API, word-family builder) on top of the
+  chrome.* shim. The files that background.js pulls in with importScripts()
+  are loaded here as normal <script> tags instead.
 -->
 </head>
 <body>
@@ -16,7 +15,6 @@
 <script src="ext/chrome-shim.js"></script>
 <script src="ext/content/cefr_data.js"></script>
 <script src="ext/sidepanel/panel_sync.js"></script>
-<script src="ext/sidepanel/apiClient.js"></script>
 <script src="ext/background.js"></script>
 </body>
 </html>

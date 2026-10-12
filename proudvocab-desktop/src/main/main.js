@@ -498,7 +498,6 @@ function buildMenu() {
       submenu: [
         { label: 'About ProudVocab Desktop', click: () => dialog.showMessageBox(mainWindow, { type: 'info', title: 'ProudVocab Desktop', message: `ProudVocab Desktop ${app.getVersion()}`, detail: `Electron ${process.versions.electron} · Chromium ${process.versions.chrome}\n\nLocal-video vocabulary trainer.\nData folder:\n${DATA_DIR()}` }) },
         { label: 'Open data folder', click: () => { try { fs.mkdirSync(DATA_DIR(), { recursive: true }); shell.openPath(DATA_DIR()); } catch {} } },
-        { label: 'Project page', click: () => shell.openExternal('https://github.com/mohsenamiri/proudvocab') },
       ],
     },
   ];

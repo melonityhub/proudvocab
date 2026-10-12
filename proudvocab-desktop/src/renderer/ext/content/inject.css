@@ -1,17 +1,17 @@
 /* Hide native subtitles but keep layout/updates active */
-body.primevocab-active .atvwebplayersdk-captions-text,
-body.primevocab-active .atvwebplayersdk-subtitle-text,
-body.primevocab-active .atvwebplayersdk-captions-text-container,
-body.primevocab-active div[data-testid="caption-text"],
-body.primevocab-active .player-timedtext,
-body.primevocab-active .ytp-caption-window-container {
+body.proudvocab-active .atvwebplayersdk-captions-text,
+body.proudvocab-active .atvwebplayersdk-subtitle-text,
+body.proudvocab-active .atvwebplayersdk-captions-text-container,
+body.proudvocab-active div[data-testid="caption-text"],
+body.proudvocab-active .player-timedtext,
+body.proudvocab-active .ytp-caption-window-container {
   opacity: 0 !important;
   pointer-events: none !important;
 }
 
-.primevocab-subtitle-overlay {
+.proudvocab-subtitle-overlay {
   position: absolute;
-  bottom: var(--primevocab-bottom, 12%) !important;
+  bottom: var(--proudvocab-bottom, 12%) !important;
   left: 50% !important;
   transform: translateX(-50%) !important;
   z-index: 2147483647 !important;
@@ -21,9 +21,9 @@ body.primevocab-active .ytp-caption-window-container {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: var(--primevocab-bg-color, rgba(10, 15, 30, 0.85)) !important;
-  border: var(--primevocab-border-width, 1.5px) solid var(--primevocab-border-color, rgba(99, 102, 241, 0.35)) !important;
-  box-shadow: var(--primevocab-box-shadow, 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 15px rgba(99, 102, 241, 0.15)) !important;
+  background: var(--proudvocab-bg-color, rgba(10, 15, 30, 0.85)) !important;
+  border: var(--proudvocab-border-width, 1.5px) solid var(--proudvocab-border-color, rgba(99, 102, 241, 0.35)) !important;
+  box-shadow: var(--proudvocab-box-shadow, 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 15px rgba(99, 102, 241, 0.15)) !important;
   padding: 10px 20px !important;
   border-radius: 12px !important;
   max-width: 85% !important;
@@ -33,16 +33,16 @@ body.primevocab-active .ytp-caption-window-container {
   opacity: 0;
 }
 
-.primevocab-subtitle-overlay.visible {
+.proudvocab-subtitle-overlay.visible {
   pointer-events: auto !important;
   opacity: 1 !important;
 }
 
-.primevocab-subtitle-line {
+.proudvocab-subtitle-line {
   margin: 4px 0 !important;
   line-height: 1.6 !important;
   color: #f1f5f9 !important;
-  font-size: var(--primevocab-font-size, 22px) !important;
+  font-size: var(--proudvocab-font-size, 22px) !important;
   font-weight: 700 !important;
   letter-spacing: -0.01em !important;
   text-shadow: 0 2px 4px rgba(0,0,0,0.8) !important;
@@ -50,11 +50,11 @@ body.primevocab-active .ytp-caption-window-container {
   pointer-events: auto !important;
 }
 
-.primevocab-subtitle-translation {
+.proudvocab-subtitle-translation {
   margin-top: 6px !important;
-  font-size: calc(var(--primevocab-font-size, 22px) * 0.82) !important;
+  font-size: calc(var(--proudvocab-font-size, 22px) * 0.82) !important;
   font-weight: 600 !important;
-  color: var(--primevocab-translation-color, #fef08a) !important;
+  color: var(--proudvocab-translation-color, #fef08a) !important;
   opacity: 0.94 !important;
   text-shadow: 0 1px 3px rgba(0,0,0,0.8) !important;
   max-width: 90% !important;
@@ -67,7 +67,7 @@ body.primevocab-active .ytp-caption-window-container {
   justify-content: center !important;
 }
 
-.primevocab-gt-badge-row {
+.proudvocab-gt-badge-row {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -75,7 +75,7 @@ body.primevocab-active .ytp-caption-window-container {
   position: relative !important;
 }
 
-.primevocab-gt-badge {
+.proudvocab-gt-badge {
   display: inline-flex !important;
   align-items: center !important;
   gap: 4px !important;
@@ -97,7 +97,7 @@ body.primevocab-active .ytp-caption-window-container {
   transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
 }
 
-.primevocab-gt-badge:hover {
+.proudvocab-gt-badge:hover {
   background: rgba(30, 41, 59, 0.95) !important;
   color: #ffffff !important;
   border-color: rgba(147, 197, 253, 0.75) !important;
@@ -105,7 +105,7 @@ body.primevocab-active .ytp-caption-window-container {
   transform: translateY(-1px) scale(1.03) !important;
 }
 
-.primevocab-gt-tooltip {
+.proudvocab-gt-tooltip {
   position: absolute !important;
   bottom: calc(100% + 7px) !important;
   left: 50% !important;
@@ -132,7 +132,7 @@ body.primevocab-active .ytp-caption-window-container {
   text-shadow: none !important;
 }
 
-.primevocab-gt-tooltip::after {
+.proudvocab-gt-tooltip::after {
   content: '' !important;
   position: absolute !important;
   top: 100% !important;
@@ -143,19 +143,19 @@ body.primevocab-active .ytp-caption-window-container {
   border-color: rgba(15, 23, 42, 0.94) transparent transparent transparent !important;
 }
 
-.primevocab-gt-badge:hover .primevocab-gt-tooltip {
+.proudvocab-gt-badge:hover .proudvocab-gt-tooltip {
   opacity: 1 !important;
   visibility: visible !important;
   transform: translateX(-50%) translateY(0) scale(1) !important;
 }
 
-.primevocab-trans-text {
+.proudvocab-trans-text {
   display: block !important;
   width: 100% !important;
   text-align: center !important;
 }
 
-.primevocab-word-chip {
+.proudvocab-word-chip {
   display: inline !important;
   padding: 0 !important;
   margin: 0 !important;
@@ -166,7 +166,7 @@ body.primevocab-active .ytp-caption-window-container {
   color: #f8fafc !important;
 }
 
-.primevocab-word-chip:hover {
+.proudvocab-word-chip:hover {
   background: #6366f1 !important;
   color: #ffffff !important;
   padding: 0 2px !important;
@@ -174,7 +174,7 @@ body.primevocab-active .ytp-caption-window-container {
   box-shadow: 0 0 8px rgba(99, 102, 241, 0.6) !important;
 }
 
-.primevocab-word-chip.word-saved {
+.proudvocab-word-chip.word-saved {
   color: #10b981 !important;
   text-decoration: underline dashed #10b981 2px !important;
   text-underline-offset: 4px !important;
@@ -183,8 +183,8 @@ body.primevocab-active .ytp-caption-window-container {
   cursor: pointer !important;
 }
 
-.primevocab-word-chip.phrasal-verb,
-.primevocab-word-chip.phrasal-linked {
+.proudvocab-word-chip.phrasal-verb,
+.proudvocab-word-chip.phrasal-linked {
   color: #c084fc !important;
   text-decoration: underline dashed #a855f7 2px !important;
   text-underline-offset: 4px !important;
@@ -192,23 +192,23 @@ body.primevocab-active .ytp-caption-window-container {
   font-weight: 700 !important;
 }
 
-.primevocab-word-chip.phrasal-verb.word-saved,
-.primevocab-word-chip.phrasal-linked.word-saved {
+.proudvocab-word-chip.phrasal-verb.word-saved,
+.proudvocab-word-chip.phrasal-linked.word-saved {
   color: #c084fc !important;
   text-decoration: underline dashed #a855f7 2px !important;
 }
 
-.primevocab-word-chip.phrasal-verb:hover,
-.primevocab-word-chip.phrasal-linked:hover,
-.primevocab-word-chip.phrasal-verb.word-saved:hover,
-.primevocab-word-chip.phrasal-linked.word-saved:hover {
+.proudvocab-word-chip.phrasal-verb:hover,
+.proudvocab-word-chip.phrasal-linked:hover,
+.proudvocab-word-chip.phrasal-verb.word-saved:hover,
+.proudvocab-word-chip.phrasal-linked.word-saved:hover {
   background: #a855f7 !important;
   color: #ffffff !important;
   text-decoration: none !important;
   box-shadow: 0 0 8px rgba(168, 85, 247, 0.6) !important;
 }
 
-.primevocab-word-chip.idiom-collocation {
+.proudvocab-word-chip.idiom-collocation {
   color: #fb923c !important;
   text-decoration: underline dashed #f97316 2px !important;
   text-underline-offset: 4px !important;
@@ -216,20 +216,20 @@ body.primevocab-active .ytp-caption-window-container {
   font-weight: 700 !important;
 }
 
-.primevocab-word-chip.idiom-collocation.word-saved {
+.proudvocab-word-chip.idiom-collocation.word-saved {
   color: #fb923c !important;
   text-decoration: underline dashed #f97316 2px !important;
 }
 
-.primevocab-word-chip.idiom-collocation:hover,
-.primevocab-word-chip.idiom-collocation.word-saved:hover {
+.proudvocab-word-chip.idiom-collocation:hover,
+.proudvocab-word-chip.idiom-collocation.word-saved:hover {
   background: #f97316 !important;
   color: #ffffff !important;
   text-decoration: none !important;
   box-shadow: 0 0 8px rgba(249, 115, 22, 0.6) !important;
 }
 
-.primevocab-word-chip.collocation-word {
+.proudvocab-word-chip.collocation-word {
   color: #38bdf8 !important;
   text-decoration: underline dashed #0284c7 2px !important;
   text-underline-offset: 4px !important;
@@ -237,20 +237,20 @@ body.primevocab-active .ytp-caption-window-container {
   font-weight: 700 !important;
 }
 
-.primevocab-word-chip.collocation-word.word-saved {
+.proudvocab-word-chip.collocation-word.word-saved {
   color: #38bdf8 !important;
   text-decoration: underline dashed #0284c7 2px !important;
 }
 
-.primevocab-word-chip.collocation-word:hover,
-.primevocab-word-chip.collocation-word.word-saved:hover {
+.proudvocab-word-chip.collocation-word:hover,
+.proudvocab-word-chip.collocation-word.word-saved:hover {
   background: #0284c7 !important;
   color: #ffffff !important;
   text-decoration: none !important;
   box-shadow: 0 0 8px rgba(56, 189, 248, 0.6) !important;
 }
 
-.primevocab-word-chip.primevocab-phrasal-linked-hover {
+.proudvocab-word-chip.proudvocab-phrasal-linked-hover {
   background: #a855f7 !important;
   color: #ffffff !important;
   border-bottom-color: transparent !important;
@@ -259,18 +259,18 @@ body.primevocab-active .ytp-caption-window-container {
   margin: 0 -2px !important;
 }
 
-.primevocab-word-chip.word-saved:hover {
+.proudvocab-word-chip.word-saved:hover {
   background: #10b981 !important;
   color: #ffffff !important;
   border-bottom-color: transparent !important;
 }
 
-.primevocab-word-chip.word-family {
+.proudvocab-word-chip.word-family {
   color: #34d399 !important;
   border-bottom: 2px dotted #34d39988 !important;
 }
 
-.primevocab-word-chip.numpad-selected {
+.proudvocab-word-chip.numpad-selected {
   background: #6366f1 !important;
   color: #ffffff !important;
   padding: 0 2px !important;
@@ -281,7 +281,7 @@ body.primevocab-active .ytp-caption-window-container {
 }
 
 /* Tooltip wrapper — görünmez genişletilmiş hit alanı */
-.primevocab-tooltip-wrapper {
+.proudvocab-tooltip-wrapper {
   position: absolute;
   bottom: 100% !important;
   left: 50% !important;
@@ -297,25 +297,25 @@ body.primevocab-active .ytp-caption-window-container {
   z-index: 2147483647 !important;
 }
 
-.primevocab-tooltip {
-  background: var(--primevocab-bg-color, rgba(10, 15, 30, 0.85)) !important;
-  border: var(--primevocab-border-width, 1.5px) solid var(--primevocab-border-color, rgba(148, 163, 184, 0.25)) !important;
+.proudvocab-tooltip {
+  background: var(--proudvocab-bg-color, rgba(10, 15, 30, 0.85)) !important;
+  border: var(--proudvocab-border-width, 1.5px) solid var(--proudvocab-border-color, rgba(148, 163, 184, 0.25)) !important;
   border-radius: 12px !important;
   padding: 8px 12px !important;
-  box-shadow: var(--primevocab-box-shadow, 0 8px 32px rgba(0, 0, 0, 0.5)) !important;
+  box-shadow: var(--proudvocab-box-shadow, 0 8px 32px rgba(0, 0, 0, 0.5)) !important;
   min-width: 150px !important;
   max-width: 300px !important;
   width: max-content !important;
   text-align: left !important;
   pointer-events: auto !important;
-  animation: primevocab-fade-in 0.15s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  animation: proudvocab-fade-in 0.15s cubic-bezier(0.16, 1, 0.3, 1) !important;
   font-family: 'Outfit', 'Inter', -apple-system, sans-serif !important;
   box-sizing: border-box !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
 }
 
-.primevocab-tooltip-word {
+.proudvocab-tooltip-word {
   font-size: 16px !important;
   font-weight: 800 !important;
   color: var(--word-color, #ffffff) !important;
@@ -327,7 +327,7 @@ body.primevocab-active .ytp-caption-window-container {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6) !important;
 }
 
-.primevocab-tooltip-trans {
+.proudvocab-tooltip-trans {
   font-size: 14px !important;
   font-weight: 700 !important;
   color: #f1f5f9 !important;
@@ -338,7 +338,7 @@ body.primevocab-active .ytp-caption-window-container {
   opacity: 1 !important;
 }
 
-.primevocab-tooltip-save {
+.proudvocab-tooltip-save {
   width: 28px !important;
   height: 28px !important;
   min-width: 28px !important;
@@ -364,7 +364,7 @@ body.primevocab-active .ytp-caption-window-container {
   position: relative !important;
 }
 
-.primevocab-tooltip-save svg {
+.proudvocab-tooltip-save svg {
   display: block !important;
   width: 14px !important;
   height: 14px !important;
@@ -372,7 +372,7 @@ body.primevocab-active .ytp-caption-window-container {
   pointer-events: none !important;
 }
 
-.primevocab-tooltip-save:hover {
+.proudvocab-tooltip-save:hover {
   transform: scale(1.1) !important;
   background: rgba(255, 255, 255, 0.16) !important;
   border-color: rgba(255, 255, 255, 0.3) !important;
@@ -382,7 +382,7 @@ body.primevocab-active .ytp-caption-window-container {
   cursor: pointer !important;
 }
 
-.primevocab-tooltip-save.saved {
+.proudvocab-tooltip-save.saved {
   background: var(--btn-active-color, #10b981) !important;
   border-color: var(--btn-active-color, #10b981) !important;
   color: #ffffff !important;
@@ -391,7 +391,7 @@ body.primevocab-active .ytp-caption-window-container {
   outline: none !important;
 }
 
-.primevocab-tooltip-save.saved:hover {
+.proudvocab-tooltip-save.saved:hover {
   transform: scale(1.1) !important;
   background: color-mix(in srgb, var(--btn-active-color, #10b981) 85%, black) !important;
   border-color: color-mix(in srgb, var(--btn-active-color, #10b981) 85%, black) !important;
@@ -401,7 +401,7 @@ body.primevocab-active .ytp-caption-window-container {
   outline: none !important;
 }
 
-.primevocab-tooltip-collocation-container {
+.proudvocab-tooltip-collocation-container {
   margin-top: 8px !important;
   padding: 8px 10px !important;
   background: rgba(255, 255, 255, 0.05) !important;
@@ -415,12 +415,12 @@ body.primevocab-active .ytp-caption-window-container {
   box-sizing: border-box !important;
 }
 
-@keyframes primevocab-fade-in {
+@keyframes proudvocab-fade-in {
   from { opacity: 0; transform: translateY(5px); }
   to   { opacity: 1; transform: translateY(0); }
 }
 
-.primevocab-quick-access-btn {
+.proudvocab-quick-access-btn {
   position: absolute !important;
   top: 20px !important;
   right: 20px !important;
@@ -441,7 +441,7 @@ body.primevocab-active .ytp-caption-window-container {
   padding: 0 !important;
 }
 
-.primevocab-quick-access-btn:hover {
+.proudvocab-quick-access-btn:hover {
   opacity: 0.95 !important;
   background: rgba(99, 102, 241, 0.25) !important;
   border-color: rgba(99, 102, 241, 0.8) !important;
@@ -449,7 +449,7 @@ body.primevocab-active .ytp-caption-window-container {
   box-shadow: 0 0 15px rgba(99, 102, 241, 0.5), 0 4px 12px rgba(0, 0, 0, 0.45) !important;
 }
 
-.primevocab-quick-access-btn img {
+.proudvocab-quick-access-btn img {
   width: 20px !important;
   height: 20px !important;
   object-fit: contain !important;
@@ -457,30 +457,30 @@ body.primevocab-active .ytp-caption-window-container {
 }
 
 /* Amazon Prime Video specific overrides via body classes */
-body.primevocab-hide-imdb .xrayQuickView,
-body.primevocab-hide-imdb [class*="xray"],
-body.primevocab-hide-imdb [class*="XRay"],
-body.primevocab-hide-imdb [class*="xRay"],
-body.primevocab-hide-imdb [data-testid*="xray"],
-body.primevocab-hide-imdb [class*="av-hover-container"],
-body.primevocab-hide-imdb [class*="avod-visual-badge"],
-body.primevocab-hide-imdb .atvwebplayersdk-xray-panel,
-body.primevocab-hide-imdb .xrayScrollPane,
-body.primevocab-hide-imdb .xrayPanel {
+body.proudvocab-hide-imdb .xrayQuickView,
+body.proudvocab-hide-imdb [class*="xray"],
+body.proudvocab-hide-imdb [class*="XRay"],
+body.proudvocab-hide-imdb [class*="xRay"],
+body.proudvocab-hide-imdb [data-testid*="xray"],
+body.proudvocab-hide-imdb [class*="av-hover-container"],
+body.proudvocab-hide-imdb [class*="avod-visual-badge"],
+body.proudvocab-hide-imdb .atvwebplayersdk-xray-panel,
+body.proudvocab-hide-imdb .xrayScrollPane,
+body.proudvocab-hide-imdb .xrayPanel {
   display: none !important;
 }
 
-body.primevocab-cinema-mode .atvwebplayersdk-controls-bar,
-body.primevocab-cinema-mode .atvwebplayersdk-title-container,
-body.primevocab-cinema-mode .atvwebplayersdk-settings-button,
-body.primevocab-cinema-mode .atvwebplayersdk-pip-button,
-body.primevocab-cinema-mode .atvwebplayersdk-fullscreen-button,
-body.primevocab-cinema-mode .atvwebplayersdk-timed-text-button {
+body.proudvocab-cinema-mode .atvwebplayersdk-controls-bar,
+body.proudvocab-cinema-mode .atvwebplayersdk-title-container,
+body.proudvocab-cinema-mode .atvwebplayersdk-settings-button,
+body.proudvocab-cinema-mode .atvwebplayersdk-pip-button,
+body.proudvocab-cinema-mode .atvwebplayersdk-fullscreen-button,
+body.proudvocab-cinema-mode .atvwebplayersdk-timed-text-button {
   display: none !important;
 }
 
 /* Selection sentence translation tooltip */
-#primevocab-selection-tooltip {
+#proudvocab-selection-tooltip {
   position: absolute;
   z-index: 2147483647;
   background: #111827;

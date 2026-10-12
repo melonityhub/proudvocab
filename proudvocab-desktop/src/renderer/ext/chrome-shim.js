@@ -453,7 +453,6 @@
   /* fetch(): local URLs stay native, http(s) is proxied through the main
    * process so Google Translate / dictionaryapi / datamuse work without CORS. */
   const nativeFetch = window.fetch ? window.fetch.bind(window) : null;
-  const BLOCKED_LICENSE_RE = /(prime-vocab-mobile\.vercel\.app|script\.google\.com)/i;
 
   window.fetch = function pvFetch(input, init) {
     let url = '';
@@ -462,12 +461,6 @@
     else if (input && typeof input === 'object') { url = input.url || ''; if (!init) opts = { method: input.method || 'GET', headers: input.headers ? Object.fromEntries(new Headers(input.headers).entries()) : undefined, body: input.body }; }
 
     if (!/^https?:/i.test(url)) return nativeFetch(input, init);
-
-    const cfg = BUS.config();
-    if (!cfg.licenseServer && BLOCKED_LICENSE_RE.test(url)) {
-      const body = JSON.stringify({ ok: false, success: false, error: 'license server disabled in this desktop build' });
-      return Promise.resolve(new Response(body, { status: 403, statusText: 'Forbidden', headers: { 'Content-Type': 'application/json' } }));
-    }
 
     const headers = {};
     try {

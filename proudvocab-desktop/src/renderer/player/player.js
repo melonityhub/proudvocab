@@ -9,8 +9,8 @@
  *   • that single DOM write is what the original extension watches on YouTube,
  *     so the whole vocabulary engine (word chips, CEFR colours, tooltips,
  *     dual subtitles, shadowing, slow-mo, rewind) keeps working untouched
- *   • publishes the cue list to `window.__primevocab_subtitles` through the
- *     same `__primevocab_track_ready` event the network interceptor used
+ *   • publishes the cue list to `window.__proudvocab_subtitles` through the
+ *     same `__proudvocab_track_ready` event the network interceptor used
  *   • normal player UX: playlist, recents, resume, cue jumping, sync offset,
  *     speed, keyboard shortcuts, drag & drop
  */
@@ -283,7 +283,7 @@
 
     // clear the panel transcript exactly like the YouTube adapter does
     try {
-      if (window.PrimeVocabCommon && window.PrimeVocabCommon.resetSubtitleState) window.PrimeVocabCommon.resetSubtitleState();
+      if (window.ProudVocabCommon && window.ProudVocabCommon.resetSubtitleState) window.ProudVocabCommon.resetSubtitleState();
       chrome.runtime.sendMessage({ action: 'video_changed', platform: 'Local' });
     } catch (e) { console.warn('[player] reset failed', e); }
     clearCaption();
@@ -381,7 +381,7 @@
 
   function currentSourceLang() {
     try {
-      const cs = window.PrimeVocabCommon && window.PrimeVocabCommon.currentSettings;
+      const cs = window.ProudVocabCommon && window.ProudVocabCommon.currentSettings;
       if (cs && cs.sourceLang) return String(cs.sourceLang).toLowerCase().slice(0, 2);
     } catch (e) { /* ignore */ }
     return null;
@@ -410,10 +410,10 @@
         ? track.cues.map((c) => [Number((c.start + state.subDelay).toFixed(3)), { start: c.start + state.subDelay, end: c.end + state.subDelay, text: c.text }])
         : [];
       const lang = track ? track.lang : (currentSourceLang() || 'en');
-      window.dispatchEvent(new CustomEvent('__primevocab_track_ready', { detail: { lang, count: cues.length, cues } }));
+      window.dispatchEvent(new CustomEvent('__proudvocab_track_ready', { detail: { lang, count: cues.length, cues } }));
       if (!track) {
-        window.__primevocab_subtitles = {};
-        window.__primevocab_sorted_times = {};
+        window.__proudvocab_subtitles = {};
+        window.__proudvocab_sorted_times = {};
       }
     } catch (e) { console.warn('[player] publishTrack failed', e); }
   }
@@ -838,7 +838,7 @@
     video.addEventListener('playing', () => { setPlayIcon(true); $('pv-bigplay').classList.add('pv-fading'); });
     video.addEventListener('pause', () => {
       // the engine pauses the video while a word tooltip is open – keep the UI in sync
-      if (!window.PrimeVocabCommon || !window.PrimeVocabCommon.isHoveringOverlay) setPlayIcon(false);
+      if (!window.ProudVocabCommon || !window.ProudVocabCommon.isHoveringOverlay) setPlayIcon(false);
       else setPlayIcon(false);
       $('pv-bigplay').classList.remove('pv-fading', 'pv-hidden');
       rememberPosition();
@@ -898,7 +898,7 @@
     stage.addEventListener('mouseleave', () => { if (!video.paused) document.body.classList.add('pv-hide-controls', 'pv-cursor-none'); });
     stage.addEventListener('click', (e) => {
       if (e.target.closest('#pv-controls') || e.target.closest('.pv-popup') || e.target.closest('#pv-empty')) return;
-      if (e.target.closest('#primevocab-subtitle-overlay')) return; // let the engine handle word clicks
+      if (e.target.closest('#proudvocab-subtitle-overlay')) return; // let the engine handle word clicks
       if (e.detail === 2) toggleFullscreen();
       else togglePlay();
     });
@@ -1057,7 +1057,7 @@
   /**
    * The browser extension loads a per-site script (inject_youtube.js,
    * inject_netflix.js, inject_amazon.js) whose very last line is
-   * `PrimeVocabCommon.init()`. That call is what pulls the user's settings out
+   * `ProudVocabCommon.init()`. That call is what pulls the user's settings out
    * of chrome.storage, builds `currentSettings` for the active adapter, loads
    * the saved-word map, wires the numpad/Alt+arrow shortcuts and – crucially –
    * registers the storage.onChanged listener plus PlayerAdapter.onInit.
@@ -1067,8 +1067,8 @@
   async function initEngine() {
     if (engineInitStarted) return;
     engineInitStarted = true;
-    const C = window.PrimeVocabCommon;
-    if (!C || typeof C.init !== 'function') { console.warn('[player] PrimeVocabCommon.init() not available'); return; }
+    const C = window.ProudVocabCommon;
+    if (!C || typeof C.init !== 'function') { console.warn('[player] ProudVocabCommon.init() not available'); return; }
     try {
       const r = C.init();
       if (r && typeof r.then === 'function') await Promise.race([r, new Promise((res) => setTimeout(res, 10000))]);
@@ -1163,18 +1163,18 @@
       cues: () => (activeTrack() ? activeTrack().cues.length : 0),
       caption: () => state.captionText,
       overlayText: () => {
-        const o = document.getElementById('primevocab-subtitle-overlay');
+        const o = document.getElementById('proudvocab-subtitle-overlay');
         return o ? (o.textContent || '').trim() : '';
       },
-      chips: () => document.querySelectorAll('.primevocab-word-chip').length,
+      chips: () => document.querySelectorAll('.proudvocab-word-chip').length,
       tooltip: () => {
-        const tip = document.querySelector('#primevocab-translation-tooltip, .primevocab-translation-tooltip');
+        const tip = document.querySelector('#proudvocab-translation-tooltip, .proudvocab-translation-tooltip');
         if (!tip) return null;
         return {
           visible: tip.offsetParent !== null,
-          word: (tip.querySelector('.primevocab-tooltip-word') || {}).textContent || '',
+          word: (tip.querySelector('.proudvocab-tooltip-word') || {}).textContent || '',
           text: (tip.textContent || '').replace(/\s+/g, ' ').trim(),
-          saved: !!tip.querySelector('.primevocab-tooltip-save.saved'),
+          saved: !!tip.querySelector('.proudvocab-tooltip-save.saved'),
         };
       },
       get video() { return video; },
